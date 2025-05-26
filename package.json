@@ -1,10 +1,11 @@
 {
   "repository": "#",
   "license": "UNLICENSED",
+  "homepage": "https://ctar0403.github.io/mesh-reflector",
   "scripts": {
     "build": "webpack --config ./bundler/webpack.prod.js",
     "dev": "webpack serve --config ./bundler/webpack.dev.js",
-    "deploy": "vercel --prod"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@babel/core": "^7.15.8",
@@ -29,5 +30,8 @@
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.4.0",
     "webpack-merge": "^5.8.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
